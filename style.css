@@ -1,0 +1,158 @@
+@font-face {
+    font-family: vazir;
+    src: url(/font/Vazir-Regular.woff) format("woff");
+}
+*{
+    font-family: vazir;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   user-select: none;
+   background-color: #8c3ff0;
+}
+.slide-show {
+    width: 1000px;
+    height: 400px;
+    position: relative;
+}
+.slides {
+    width: 900px;
+    height: 400px;
+}
+.slide {
+    display: none;
+}
+.active {
+    margin-left: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.card .media-icon {
+    margin-bottom: 15px;
+}
+.card .media-icon a {
+    text-decoration: none;
+    color: #8c3ff0;
+    opacity: 0.7;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+.card .media-icon a:hover {
+    opacity: 1;
+}
+.image {
+    background: #8c3ff0;
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    padding: 3px;
+    margin-bottom: 30px;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #fff;
+}
+.card .data-person {
+    color: #000;
+    margin-bottom: 20px;
+}
+.data-person .name {
+    font-size: 20px;
+    font-weight: 600;
+}
+.data-person .job {
+    font-size: 15px;
+    font-weight: 500;
+}
+.card .button a {
+    text-decoration: none;
+    color: #fff;
+    background: #8c3ff0;
+   padding: 6px 25px;
+   border-radius: 10px;
+   transition: all 0.3s ease;
+}
+.card .button a:hover {
+    background: #6616d4;
+}
+.slide-show .points {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-show .points span {
+    background: #fff;
+    opacity: 1;
+    width: 20px;
+    height: 5px;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.points span.active {
+    background: #fff;
+    opacity: 0.4;
+}
+.slide-show .button-click {
+    position: absolute;
+    top: 45%;
+    color: #fff;
+    cursor: pointer;
+}
+.button-click .button-next {
+    position: absolute;
+    right: 0;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+}
+.button-click .button-next:hover {
+    background: #fff;
+    color: rgba(0,0,0,0.8);
+}
+.button-click .button-prev {
+    position: absolute;
+    left: 995px;
+    top: 0%;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+}
+.button-click .button-prev:hover {
+    background: #fff;
+    color: rgba(0,0,0,0.8);
+}
